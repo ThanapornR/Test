@@ -2,17 +2,34 @@
   p {
     margin-left: 1cm;
   }
+  .card {
+    border-color: hsla(183, 70%, 81%, 0.938);
+    box-shadow: 0 2px 2px 0 hsla(181, 59%, 82%, 0.938);
+  }
+  input {
+    border-color: hsla(183, 70%, 81%, 0.938);
+    box-shadow: 0 2px 2px 0 hsla(181, 59%, 82%, 0.938);
+  }
+  label {
+    color:hsla(182, 100%, 40%, 0.938);
+    text-shadow: 0 3px 5px 0 hsla(181, 51%, 39%, 0.938);
+  }
+  .button{
+    background-color:#03b9b9;
+    color: white;
+  }
 
 </style>
 
 
   <div class="card card-primary">
     <div class="card-body text-primary">
-      จองบริการ
+      <i class="material-icons"></i>
+      <label>จองบริการ</label>
     </div>
   </div>
-  <div class="card-body">
-    <div class="card border-primary mb-3 " style="max-width: 100rem;">
+  <div class="card-body ">
+    <div class="card mb-3 "  style="max-width: 100%;">
       <div class="card-body text-primary" >
         <label for="inputCostomer" class="col-form-label">ลูกค้า</label>
         <div class="form-group row">
@@ -32,7 +49,7 @@
   </div>
 
   <div class="card-body">
-    <div class="card border-primary mb-3 " style="max-width: 100rem;">
+    <div class="card mb-3 " style="max-width: 100%;">
       <div class="card-body text-primary" >
         <label for="inputCostomer" class="col-form-label">ข้อมูลลูกค้า</label>
         <div class="form-group row">
@@ -61,7 +78,7 @@
   </div>
 
   <div class="card-body">
-    <div class="card border-primary mb-3 " style="max-width: 100rem;">
+    <div class="card  mb-3 " style="max-width: 100%;">
       <div class="card-body text-primary" >
         <div class="form-group row">
           <label for="inputType" class="col-sm-2 col-form-label">ประเภทงาน</label>
@@ -120,7 +137,7 @@
   </div>
 
   <div class="card-body">
-    <div class="card border-primary mb-3 " style="max-width: 100rem;">
+    <div class="card  mb-3 " style="max-width: 100%;">
       <div class="card-body text-primary" >
         <label for="inputRate" class="col-form-label">ประเมินค่าใช้จ่าย</label>
         <div class="form-group row">
@@ -147,7 +164,7 @@
   </div>
 
   <div class="card-body">
-    <div class="card border-primary mb-3 " style="max-width: 100rem;">
+    <div class="card  mb-3 " style="max-width: 100%;">
       <div class="card-body text-primary" >
         <div class="form-group row">
           <label for="inputIDTool" class="col-sm-2 col-form-label">รหัสอะไหล่</label>
@@ -170,7 +187,7 @@
           </div>
 
           <div class="col-sm-6 text-right">
-            <button type="button" class="btn btn-success col-sm-3">เพิ่ม</button>
+            <button type="button" class="btn col-sm-3 button">เพิ่ม</button>
           </div>
         </div>
       </div>
@@ -178,7 +195,7 @@
   </div>
 
   <div class="card-body">
-    <div class="card border-primary mb-3 " style="max-width: 100rem;">
+    <div class="card mb-3 " style="max-width: 100%;">
       <div class="card-body text-primary" >
         <div class="form-group row">
           <label for="inputIDTool" class="col-sm-2 col-form-label">ประเมินค่าใช้จ่าย</label>
@@ -208,7 +225,6 @@
                   <p>- ฿ 177</p>
                 </td>
               </tr>
-
             </tbody>
             <tfoot>
               <tr colspan="5">
@@ -221,3 +237,8 @@
       </div>
     </div>
   </div>
+
+  <div class="col-sm-12 text-right">
+    <button type="button" class="btn col-sm-3 button">ยืนยัน</button>
+  </div>
+  <br>
