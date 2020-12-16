@@ -1,0 +1,337 @@
+<!-- head -->
+<div class="card card-primary shadow">
+  <div class="card-body text-primary1">
+    <i class="material-icons"></i>
+    <label>จองบริการ</label>
+  </div>
+</div>
+<div class="card-body ">
+  <!-- head -->
+  <!-- <nav class="navbar navbar-expand navbar-light bg-white topbar mb-3 static-top shadow">
+    <a class="navbar-brand text-primary1">จองบริการ</a>
+  </nav> -->
+  <!-- ส่วนที่1 -->
+  <div class="card-body ">
+    <div class="card border-gray mb-1 text-shadow shadow" style="max-width: 100%;">
+      <div class="card-body text-primary1">
+        <label for="inputCustomer" class="col-form-label">ข้อมูลลูกค้า</label>
+        <div class="form-group row">
+          <!-- KUBOTA ID -->
+          <div class="col-lg-6">
+            <div class="form-group row">
+              <div class="col-auto">
+                <label for="inputID" class="col-form-label">KUBOTA ID</label>
+              </div>
+              <div class="col-lg">
+                <input type="text"class="form-control text-shadow" id="inputID">
+              </div>
+            </div>
+          </div>
+          <!-- ชื่อลูกค้า -->
+          <div class="col-lg-6">
+            <div class="form-group row">
+              <div class="col-auto">
+                <label for="inputName" class="col-form-label">ชื่อลูกค้า</label>
+              </div>
+              <div class="col-lg">
+                <input type="text"class="form-control text-shadow" id="inputName">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- เบอร์โทร -->
+        <div class="form-group row">
+          <div class="col-lg-6">
+            <div class="form-group row">
+              <div class="col-lg-2">
+                <label for="inputTel" class="col-form-label">เบอร์โทร</label>
+              </div>
+              <div class="col-lg">
+                <input type="text"class="form-control text-shadow" id="inputTel">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="form-group row">
+              <div class="col-auto">
+                <label for="inputHour" class="col-form-label">ชั่วโมงการใช้งาน</label>
+              </div>
+              <div class="col-lg">
+                <input type="text"class="form-control text-shadow" id="inputHour">
+              </div>
+              <div class="col-lg-1">
+                <label for="inputSupplies" class="col-form-label" style="margin-left: -12px;">ชั่วโมง</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- ส่วนที่2 -->
+<div class="card-body">
+  <div class="card border-gray mb-1 text-shadow shadow" style="max-width: 100%;">
+    <div class="card-body col-lg">
+        <!-- ร้านค้าบริการ -->
+        <div class="form-group row">
+          <div class="col-lg-6">
+            <div class="form-group row">
+              <div class="col-lg-2">
+                <label for="inputStore" class="col-form-label">ร้านค้าบริการ</label>
+              </div>
+              <div class="col-lg">
+                <input type="text"class="form-control text-shadow" id="inputStore">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- รูปภาพ -->
+        <div class="form-group row">
+          <div class="col-lg-6">
+            <div class="form-group row">
+              <div class="col-lg-2">
+                <label for="inputImg" class="col-form-label">รูปภาพ</label>
+              </div>
+              <div class="col-lg">
+                <input type="text"class="form-control text-shadow" id="inputImg1">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="form-group row">
+              <div class="col-lg">
+                <input type="text"class="form-control text-shadow" id="inputImg2">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- อาการเสีย -->
+        <div class="form-group row">
+          <div class="col-lg-6">
+            <div class="form-group row">
+              <div class="col-lg-2">
+                <label for="inputBroken" class="col-form-label">อาการเสีย</label>
+              </div>
+              <div class="col-lg">
+                <input type="text"class="form-control text-shadow" id="inputBroken">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ประเภทงาน -->
+        <div class="form-group row">
+          <div class="col-lg-6">
+            <div class="form-group row">
+              <div class="col-lg-2">
+                <label for="inputType" class="col-form-label">ประเภทงาน</label>
+              </div>
+              <div class="col-lg">
+                <select class="form-control  dropdown-toggle text-shadow" aria-label=".form-select-sm example">
+                  <option selected>งานซ่อมทั่วไป</option>
+                  <option value="1">งานซ่อมทั่วไป1</option>
+                  <option value="2">งานซ่อมทั่วไป2</option>
+                  <option value="3">งานซ่อมทั่วไป3</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- จองบริการ -->
+        <div class="form-group row">
+          <!-- วันที่จองบริการ -->
+          <div class="col-lg-6">
+            <div class="form-group row">
+              <div class="col-auto">
+                <label for="inputDate" class="col-form-label">วันที่จองบริการ</label>
+              </div>
+              <div class="col-lg">
+                <input type="date"class="form-control text-shadow" id="inputDate" style="margin-left: 0px;">
+              </div>
+            </div>
+          </div>
+          <!-- เวลาจองบริการ -->
+          <div class="col-lg-6">
+            <div class="form-group row">
+              <div class="col-auto">
+                <label for="inputTime" class="col-form-label">เวลาจองบริการ</label>
+              </div>
+              <div class="col-lg">
+                <input type="time"class="form-control text-shadow" id="inputTime">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ID / ชื่อช่างบริการ -->
+        <div class="form-group row">
+          <div class="col-lg-6">
+            <div class="form-group row">
+              <div class="col-auto">
+                <label for="inputNameTech" class="col-form-label">ID / ชื่อช่างบริการ</label>
+              </div>
+              <div class="col-lg">
+                <select class="form-control  dropdown-toggle text-shadow" aria-label=".form-select-sm example" style="margin-left: -12px;">
+                  <option selected>สมชัย</option>
+                  <option value="1">สมชาย</option>
+                  <option value="2">สมศรี</option>
+                  <option value="3">สมหมาย</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- ส่วนที่3 -->
+<div class="card-body">
+  <div class="card border-gray mb-1 shadow" style="max-width: 100%;">
+    <div class="card-body text-primary1">
+      <label for="inputPropCost" class="col-form-label">ประเมินค่าใช้จ่าย</label>
+      <div class="form-group row">
+        <!-- ค่าแรงพนักงาน -->
+        <div class="col-lg-6">
+          <div class="form-group row">
+            <div class="col-auto">
+              <label for="inputSalary" class="col-form-label">ค่าแรงพนักงาน</label>
+            </div>
+            <div class="col-lg">
+              <input type="text"class="form-control text-shadow" id="inputSalary">
+            </div>
+            <div class="col-lg-1">
+              <label for="inputSupplies" class="col-form-label">บาท</label>
+            </div>
+          </div>
+        </div>
+        <!-- ค่าอะไหล่สิ้นเปลือง -->
+        <div class="col-lg-6">
+          <div class="form-group row">
+            <div class="col-auto">
+              <label for="inputSupplies" class="col-form-label">ค่าอะไหล่สิ้นเปลือง</label>
+            </div>
+            <div class="col-lg">
+              <input type="text"class="form-control text-shadow" id="inputSupplies">
+            </div>
+            <div class="col-lg-1">
+              <label for="inputSupplies" class="col-form-label">บาท</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ค่ารถ -->
+      <div class="form-group row">
+        <div class="col-lg-6">
+          <div class="form-group row">
+            <div class="col-lg-2">
+              <label for="inputCar" class="col-form-label">ค่ารถ</label>
+            </div>
+            <div class="col-lg">
+              <input type="text"class="form-control text-shadow" id="inputCar">
+            </div>
+            <div class="col-lg-1">
+              <label for="inputSupplies" class="col-form-label">บาท</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ส่วนที่4 -->
+<div class="card-body">
+  <div class="card border-gray mb-1 shadow" style="max-width: 100%;">
+    <div class="card-body text-primary1">
+      <div class="form-group row">
+        <!-- รหัสอะไหล่ -->
+        <div class="col-lg-6">
+          <div class="form-group row">
+            <div class="col-auto">
+              <label for="inputIDSupplies" class="col-form-label">รหัสอะไหล่</label>
+            </div>
+            <div class="col-lg">
+              <input type="text"class="form-control text-shadow" id="inputIDSupplies">
+            </div>
+          </div>
+        </div>
+        <!-- ราคา -->
+        <div class="col-lg-6">
+          <div class="form-group row">
+            <div class="col-auto">
+              <label for="inputCost" class="col-form-label">ราคา</label>
+            </div>
+            <div class="col-lg">
+              <input type="text"class="form-control text-shadow" id="inputCost">
+            </div>
+            <div class="col-lg-1">
+              <label for="inputSupplies" class="col-form-label">บาท</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-lg-6">
+          <div class="form-group row">
+            <div class="col-auto">
+              <label for="inputPromotion" class="col-form-label">โปรโมชั่นส่วนลด</label>
+            </div>
+            <div class="input-group col-lg">
+              <input type="text" class="col-auto form-control" aria-label="" aria-describedby="button-addon2">
+              <button class="btn btn-dark" type="button" id="button-addon2">ใช้โค้ด</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6" style="text-align: right;">
+          <button type="submit" class="btn btn-success1 col-xl-3">เพิ่ม</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ส่วนที่5 -->
+<div class="card-body">
+  <div class="card border-gray mb-1 shadow" style="max-width: 100%;">
+    <div class="card-body text-primary1">
+      <!-- <div class="form-group row"> -->
+        <label for="inputCostProp" class="col-form-label">ประเมินค่าใช้จ่าย</label><br>
+      <!-- </div> -->
+      <div class="card-body" >
+        <table class="table" border="0"  cellpadding="4" cellspacing="0">
+          <thead>
+            <tr>
+              <th scope="col"><p>รายละเอียด</p></th>
+              <th scope="col"><p>ราคา</p></th>
+            </tr>
+          </thead>
+          <tbody >
+            <tr>
+              <td rowspan="5">
+                <p>ค่าแรงพนังงาน</p>
+                <p>ค่ารถ</p>
+                <p>W9501-H1101:กรองน้ำมันเชื้อเพลิง</p>
+                <p>น้ำมันเครื่อง</p>
+                <p>ส่วนลดมูลค่ารวม</p>
+              </td>
+              <td rowspan="5">
+                <p> ฿ 200</p>
+                <p> ฿ 100</p>
+                <p> ฿ 270</p>
+                <p>฿ 1,500</p>
+                <p>- ฿ 177</p>
+              </td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr colspan="5">
+              <th scope="col"><p>รวม</p></th>
+              <th scope="col"><p>฿ 1,893</p></th>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-sm-12" style="text-align: right;">
+  <button type="submit" class="btn btn-success1 col-xl-2 mb-3">ยืนยัน</button>
+</div>
+</div>

@@ -1,7 +1,7 @@
+import { from } from 'rxjs';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ButtonsModule } from 'ngx-bootstrap/buttons';
-
 
 
 @NgModule({
@@ -11,7 +11,7 @@ import { ButtonsModule } from 'ngx-bootstrap/buttons';
     ButtonsModule.forRoot(),
   ],
   exports: [
-    ButtonsModule
+    ButtonsModule,
   ]
 })
 export class Page2Module { }

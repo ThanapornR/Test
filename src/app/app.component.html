@@ -1,183 +1,35 @@
-<!-- head -->
-<nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-  <a class="navbar-brand">จองบริการ</a>
-</nav>
-
-<!-- ส่วนที่1 -->
-<div class="card-body">
-  <div class="card border-primary mb-1 " style="max-width: 120rem;">
-    <div class="card-body text-primary">
-      <label for="inputCustomer" class="col-form-label">ข้อมูลลูกค้า</label>
-      <div class="form-group row">
-        <label for="inputID" class="col-sm-2 col-form-label">KUBOTA ID</label>
-        <div class="col-sm-4">
-          <input type="text" class="form-control" id="inputID">
+<div class="sidenav ">
+  <div id="wrapper">
+    <!-- Sidebar -->
+      <ul class="navbar-nav bg-gradient-primary1 sidebar sidebar-dark accordion" id="accordionSidebar">
+        <!-- Sidebar - Brand -->
+        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+          <div class="sidebar-brand-text mx-3">Kubota</div>
+        </a>
+        <!-- Divider -->
+        <!-- <hr class="sidebar-divider my-0"> -->
+        <!-- Heading -->
+        <div class="sidebar-heading">
+          Menu
         </div>
-        <label for="inputName" class="col-sm-2 col-form-label">ชื่อลูกค้า</label>
-        <div class="col-sm-4">
-          <input type="text" class="form-control" id="inputName">
-        </div>
-      </div>
-      <div class="form-group row">
-        <label for="inputTel" class="col-sm-2 col-form-label">เบอร์โทร</label>
-        <div class="col-sm-4">
-          <input type="tel" class="form-control" id="inputTel">
-        </div>
-        <label for="inputHour" class="col-sm-2 col-form-label">ชั่วโมงการใช้งาน</label>
-        <div class="col-sm-2">
-          <input type="number" class="form-control" id="inputHour">
-        </div>
-        <label class="col-sm-2 col-form-label">ชั่วโมง</label>
-      </div>
-    </div>
+        <!-- Nav Item - Dashboard -->
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">
+            <i class="fas fa-chart-pie"></i>
+              <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
+              <span>แดชบอร์ด</span>
+          </a>
+        </li>
+        <!-- Nav Item - Dashboard -->
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+              <span>จองบริการ</span></a>
+        </li>
+      </ul>
+  <!-- End of Sidebar -->
   </div>
 </div>
-<!-- ส่วนที่2 -->
-<div class="card-body">
-  <div class="card border-primary mb-1 " style="max-width: 120rem;">
-    <div class="card-body text-primary">
-      <div class="form-group row">
-        <label for="inputStore" class="col-sm-2 col-form-label">ร้านค้าบริการ</label>
-        <div class="col-sm-6">
-          <input type="text"class="form-control" id="inputStore">
-        </div>
-      </div>
-      <div class="form-group row">
-        <label for="inputImg" class="col-sm-2 col-form-label">รูปภาพ</label>
-        <div class="col-sm-3">
-          <input type="text"class="form-control" id="inputImg1">
-        </div>
-        <div class="col-sm-3">
-          <input type="text"class="form-control" id="inputImg2">
-        </div>
-      </div>
-      <div class="form-group row">
-        <label for="inputBroken" class="col-sm-2 col-form-label">อาการเสีย</label>
-        <div class="col-sm-6">
-          <input type="text"class="form-control" id="inputBroken">
-        </div>
-      </div>
-      <div class="form-group row">
-        <label for="inputType" class="col-sm-2 col-form-label">ประเภทงาน</label>
-          <div class="col-sm-4">
-            <select class="form-control  dropdown-toggle" aria-label=".form-select-sm example">
-              <option selected>งานซ่อมทั่วไป</option>
-              <option value="1">งานซ่อมทั่วไป1</option>
-              <option value="2">งานซ่อมทั่วไป2</option>
-              <option value="3">งานซ่อมทั่วไป3</option>
-            </select>
-          </div>
-      </div>
-      <div class="form-group row">
-        <label for="inputDate" class="col-sm-2 col-form-label">วันที่จองบริการ</label>
-        <div class="col-sm-4">
-          <input type="date"class="form-control" id="inputDate">
-        </div>
-        <label for="inputTime" class="col-sm-2 col-form-label">เวลาจองบริการ</label>
-        <div class="col-sm-4">
-          <input type="time"class="form-control" id="inputTime">
-        </div>
-      </div>
-      <div class="form-group row">
-        <label for="inputNameTech" class="col-sm-2 col-form-label">ID / ชื่อช่างบริการ</label>
-        <div class="col-sm-4">
-            <select class="form-control  dropdown-toggle" aria-label=".form-select-sm example">
-              <option selected>สมชัย</option>
-              <option value="1">สมชาย</option>
-              <option value="2">สมศรี</option>
-              <option value="3">สมหมาย</option>
-            </select>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- ส่วนที่3 -->
-<div class="card-body">
-  <div class="card border-primary mb-1" style="max-width: 120rem;">
-    <div class="card-body text-primary">
-      <label for="inputCustomer" class="col-form-label">ประเมินค่าใช้จ่าย</label>
-      <div class="form-group row">
-        <label for="inputID" class="col-sm-2 col-form-label">ค่าแรงพนักงาน</label>
-        <div class="col-sm-3">
-          <input type="text" class="form-control" id="inputID">
-        </div>
-        <label class="col-sm-1 col-form-label">บาท</label>
-        <label for="inputName" class="col-sm-2 col-form-label">ค่าอะไหล่สิ้นเปลือง</label>
-        <div class="col-sm-3">
-          <input type="text" class="form-control" id="inputName">
-        </div>
-        <label class="col-sm-1 col-form-label">บาท</label>
-      </div>
-      <div class="form-group row">
-        <label for="inputTel" class="col-sm-2 col-form-label">ค่ารถ</label>
-        <div class="col-sm-3">
-          <input type="tel" class="form-control" id="inputTel">
-        </div>
-        <label class="col-sm-1 col-form-label">บาท</label>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- ส่วนที่4 -->
-<div class="card-body">
-  <div class="card border-primary mb-1 " style="max-width: 120rem;">
-    <div class="card-body text-primary">
-      <div class="form-group row">
-        <label for="inputID" class="col-sm-2 col-form-label">รหัสอะไหล่</label>
-        <div class="col-sm-4">
-          <input type="text" class="form-control" id="inputID">
-        </div>
-        <label for="inputName" class="col-sm-2 col-form-label">ราคา</label>
-        <div class="col-sm-3">
-          <input type="text" class="form-control" id="inputName">
-        </div>
-        <label class="col-sm-1 col-form-label">บาท</label>
-      </div>
-      <div class="form-group row">
-        <label for="inputTel" class="col-sm-2 col-form-label">โปรโมชั่นส่วนลด</label>
-        <div class="input-group mb-3 col-4">
-          <input type="text" class="form-control" placeholder="" aria-label="Recipient's username" aria-describedby="button-addon2">
-          <button class="btn btn-dark" type="button" id="button-addon2">ใช้โค้ด</button>
-        </div>
-        <div class="col-sm-6" style="text-align: right;">
-          <button type="submit" class="btn btn-success col-xl-3">เพิ่ม</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- ส่วนที่5 -->
-<div class="card-body">
-  <div class="card border-primary mb-1 " style="max-width: 120rem;">
-    <div class="card-body text-primary">
-      <label for="inputCustomer" class="col-form-label">ประเมินค่าใช้จ่าย</label><br>
-      <table class="table">
-        <thead >
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-          </tr>
-        </thead>
-        <tbody class="table table-borderless">
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>@twitter</td>
-          </tr>
-        </tbody>
-      </table>
-      <hr>
-      <div class="col-sm-4" style="text-align: right;">
-        <button type="submit" class="btn btn-primary">เพิ่ม</button>
-      </div>
-    </div>
-  </div>
+<div class="main">
+  <router-outlet></router-outlet>
 </div>
