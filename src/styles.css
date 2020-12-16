@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+p {
+  margin-left: 1cm;
+}
+.gg {
+  margin-left: 1cm;
+  column-width: 3.5cm;
+}
+.gg2 {
+  margin-left: 1cm;
+  column-width: 2cm;
+}
+.gg3 {
+  margin-left: 1cm;
+  column-width: 3cm;
+}
+.card {
+  border-color: hsla(183, 70%, 81%, 0.938);
+  box-shadow: 0 2px 2px 0 hsla(181, 59%, 82%, 0.938);
+}
+input {
+  border-color: hsla(183, 70%, 81%, 0.938);
+  box-shadow: 0 2px 2px 0 hsla(181, 59%, 82%, 0.938);
+}
+label {
+  color:#00A9AE;
+  text-shadow: 0 3px 5px 0 #00A9AE;
+}
+.button{
+  background-color:#00A9AE;
+  color: white;
+}

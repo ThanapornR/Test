@@ -1,244 +1,53 @@
-<style>
-  p {
-    margin-left: 1cm;
-  }
-  .card {
-    border-color: hsla(183, 70%, 81%, 0.938);
-    box-shadow: 0 2px 2px 0 hsla(181, 59%, 82%, 0.938);
-  }
-  input {
-    border-color: hsla(183, 70%, 81%, 0.938);
-    box-shadow: 0 2px 2px 0 hsla(181, 59%, 82%, 0.938);
-  }
-  label {
-    color:hsla(182, 100%, 40%, 0.938);
-    text-shadow: 0 3px 5px 0 hsla(181, 51%, 39%, 0.938);
-  }
-  .button{
-    background-color:#03b9b9;
-    color: white;
-  }
+<div class="sidenav ">
+  <div id="wrapper">
+    <!-- Sidebar -->
+      <ul class="navbar-nav bg-gradient-primary1 sidebar sidebar-dark accordion" id="accordionSidebar">
+        <!-- Sidebar - Brand -->
+        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+          <div class="sidebar-brand-text mx-3">Kubota</div>
+        </a>
+        <!-- Divider -->
+        <!-- <hr class="sidebar-divider my-0"> -->
+        <!-- Heading -->
+        <div class="sidebar-heading">
+          <span>MENU</span>
+        </div>
+        <!-- Nav Item - Dashboard -->
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">
+            <i class="fas fa-chart-pie"></i>
+              <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
+              <span>แดชบอร์ด</span>
+          </a>
+        </li>
+        <!-- Nav Item - Dashboard -->
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+              <span>จองบริการ</span></a>
+        </li>
 
-</style>
+        <!-- Heading -->
+        <div class="sidebar-heading">
+          <span>MASTER</span>
+        </div>
+        <!-- Nav Item - Dashboard -->
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>ส่วนลด</span></a>
+      </li>
+      </ul>
 
 
-  <div class="card card-primary">
-    <div class="card-body text-primary">
-      <i class="material-icons"></i>
-      <label>จองบริการ</label>
-    </div>
+
+  <!-- End of Sidebar -->
   </div>
-  <div class="card-body ">
-    <div class="card mb-3 "  style="max-width: 100%;">
-      <div class="card-body text-primary" >
-        <label for="inputCostomer" class="col-form-label">ลูกค้า</label>
-        <div class="form-group row">
-          <label for="inputID" class="col-sm-2 col-form-label">เลขบัตรประชาชน</label>
-          <div class="col-sm-6">
-            <input type="text" class="form-control" id="inputID">
-          </div>
-        </div>
-        <div class="form-group row">
-          <label for="inputTel1" class="col-sm-2 col-form-label">เบอร์โทรศัพท์มือถือ</label>
-          <div class="col-sm-6">
-            <input type="tel" class="form-control" id="inputTel1">
-          </div>
-        </div>
-      </div>
-    </div>
+</div>
+<div class="main">
+  <router-outlet></router-outlet>
+</div>
+
+  <div class="main">
+    <router-outlet></router-outlet>
   </div>
-
-  <div class="card-body">
-    <div class="card mb-3 " style="max-width: 100%;">
-      <div class="card-body text-primary" >
-        <label for="inputCostomer" class="col-form-label">ข้อมูลลูกค้า</label>
-        <div class="form-group row">
-          <label for="inputKID" class="col-sm-2 col-form-label">KUBOTA ID</label>
-          <div class="col-sm-4">
-            <input type="text" class="form-control" id="inputKID">
-          </div>
-          <label for="inputName" class="col-sm-2 col-form-label">ชื่อลูกค้า</label>
-          <div class="col-sm-4">
-            <input type="text" class="form-control" id="inputName">
-          </div>
-        </div>
-        <div class="form-group row">
-          <label for="inputTel2" class="col-sm-2 col-form-label">เบอร์โทร</label>
-          <div class="col-sm-4">
-            <input type="tel" class="form-control" id="inputTel2">
-          </div>
-          <label for="inputHour1" class="col-sm-2 col-form-label">ชั่วโมงการใช้งาน</label>
-          <div class="col-sm-3">
-            <input type="number" class="form-control" id="inputHour1">
-          </div>
-          <label for="inputhour" class="col-sm-1 col-form-label">ชั่วโมง</label>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="card-body">
-    <div class="card  mb-3 " style="max-width: 100%;">
-      <div class="card-body text-primary" >
-        <div class="form-group row">
-          <label for="inputType" class="col-sm-2 col-form-label">ประเภทงาน</label>
-          <div class="col-sm-4">
-              <div class="form-group ">
-                <select id="inputState" class="form-control">
-                  <option selected>ประเภทงาน...</option>
-                  <option>ซ่อมทั่วไป</option>
-                  <option>เปลี่ยนสีรถยนต์</option>
-                  <option>ล้างรถยนต์</option>
-                </select>
-              </div>
-          </div>
-          <label for="inputHour2" class="col-sm-2 col-form-label">ชั่วโมงการใช้งาน</label>
-          <div class="col-sm-3">
-            <input type="number" class="form-control" id="inputHour2">
-          </div>
-          <label for="inputhour" class="col-sm-1 col-form-label">ชั่วโมง</label>
-        </div>
-        <div class="form-group row">
-          <label for="inputDetail" class="col-sm-2 col-form-label">อาการเสีย</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="inputDetail">
-          </div>
-        </div>
-
-        <div class="form-group row">
-          <label for="inputTradeName" class="col-sm-2 col-form-label">ร้านค้าบริการ</label>
-          <div class="col-sm-4">
-            <span class="input-group-text">คูโบต้าชัยศิริขอนแก่น</span>
-          </div>
-        </div>
-          <div class="form-group row">
-            <label for="inputDate" class="col-sm-2 col-form-label">วันที่จองบริการ</label>
-            <div class="col-sm-4">
-              <input type="date" class="form-control" id="inputDate">
-            </div>
-            <label for="inputTime" class="col-sm-2 col-form-label">เวลาจองบริการ</label>
-            <div class="col-sm-4">
-              <input type="time" class="form-control" id="inputTime">
-            </div>
-          </div>
-          <div class="form-group row">
-            <label for="inputIDName" class="col-sm-2 col-form-label">ID/ชื่อช่างบริการ</label>
-            <div class="col-sm-4">
-              <div class="form-group ">
-                <select id="inputState" class="form-control">
-                  <option selected>ชื่อช่างบริการ...</option>
-                  <option>ชนกันต์ คุรากร</option>
-                </select>
-              </div>
-          </div>
-          </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="card-body">
-    <div class="card  mb-3 " style="max-width: 100%;">
-      <div class="card-body text-primary" >
-        <label for="inputRate" class="col-form-label">ประเมินค่าใช้จ่าย</label>
-        <div class="form-group row">
-          <label for="inputWage" class="col-sm-2 col-form-label">ค่าแรงพนักงาน</label>
-          <div class="col-sm-3">
-            <input type="number" class="form-control" id="inputWage">
-          </div>
-          <label for="inputPromotiom" class="col-sm-1 col-form-label">บาท</label>
-          <label for="inputOtherCost" class="col-sm-2 col-form-label">ค่าอะไหล่สิ้นเปลือง</label>
-          <div class="col-sm-3">
-            <input type="number" class="form-control" id="inputOtherCost">
-          </div>
-          <label for="inputBaht" class="col-sm-1 col-form-label">บาท</label>
-        </div>
-        <div class="form-group row">
-          <label for="inputCode" class="col-sm-2 col-form-label">ค่ารถ</label>
-          <div class="col-sm-3">
-            <input type="number" class="form-control" id="inputCode">
-          </div>
-          <label for="inputBaht" class="col-sm-1 col-form-label">บาท</label>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="card-body">
-    <div class="card  mb-3 " style="max-width: 100%;">
-      <div class="card-body text-primary" >
-        <div class="form-group row">
-          <label for="inputIDTool" class="col-sm-2 col-form-label">รหัสอะไหล่</label>
-          <div class="col-sm-4">
-            <input type="number" class="form-control" id="inputIDTool">
-          </div>
-          <label for="inputCost" class="col-sm-2 col-form-label">ราคา</label>
-          <div class="col-sm-3">
-            <input type="number" class="form-control" id="inputCost">
-          </div>
-          <label for="inputBaht" class="col-sm-1 col-form-label">บาท</label>
-        </div>
-        <div class="form-group row">
-          <label for="inputPromotiom" class="col-sm-2 col-form-label">โปรโมชั่นส่วนลด</label>
-          <div class="input-group mb-3 col-sm-4">
-            <input type="text" class="form-control" placeholder="" aria-label="โปรโมชั่นส่วนลด" aria-describedby="button-addon2">
-            <div class="input-group-append">
-              <button class="btn btn-dark" type="button" id="button-addon2">ใช้โค้ด</button>
-            </div>
-          </div>
-
-          <div class="col-sm-6 text-right">
-            <button type="button" class="btn col-sm-3 button">เพิ่ม</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="card-body">
-    <div class="card mb-3 " style="max-width: 100%;">
-      <div class="card-body text-primary" >
-        <div class="form-group row">
-          <label for="inputIDTool" class="col-sm-2 col-form-label">ประเมินค่าใช้จ่าย</label>
-        </div>
-          <div class="card-body" >
-          <table  class="table" border="0"  cellpadding="4" cellspacing="0">
-            <thead>
-              <tr>
-                <th scope="col"><p>รายละเอียด</p></th>
-                <th scope="col"><p>ราคา</p></th>
-              </tr>
-            </thead>
-            <tbody >
-              <tr>
-                <td rowspan="5">
-                  <p>ค่าแรงพนังงาน</p>
-                  <p>ค่ารถ</p>
-                  <p>W9501-H1101:กรองน้ำมันเชื้อเพลิง</p>
-                  <p>น้ำมันเครื่อง</p>
-                  <p>ส่วนลดมูลค่ารวม</p>
-                </td>
-                <td rowspan="5">
-                  <p> ฿ 200</p>
-                  <p> ฿ 100</p>
-                  <p> ฿ 270</p>
-                  <p>฿ 1,500</p>
-                  <p>- ฿ 177</p>
-                </td>
-              </tr>
-            </tbody>
-            <tfoot>
-              <tr colspan="5">
-                <th scope="col"><p>รวม</p></th>
-                <th scope="col"><p>฿ 1,893</p></th>
-              </tr>
-            </tfoot>
-          </table>
-          </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-sm-12 text-right">
-    <button type="button" class="btn col-sm-3 button">ยืนยัน</button>
-  </div>
-  <br>
