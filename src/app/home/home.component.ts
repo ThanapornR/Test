@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  // import รูปเข้ามา
+  image = '../../assets/icon/tree.png'
   constructor() { }
 
   ngOnInit(): void {
