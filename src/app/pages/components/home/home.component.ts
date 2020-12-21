@@ -28,17 +28,21 @@ export class HomeComponent implements OnInit {
   createForm() {
     this.form = this.fb.group({
       // "" = string, null = number  
-      KUBOTAID: "",
-      name: "",
-      tel: "",
-      hour: null,
-      store: "",
+      KUBOTAID: "KU2020001",
+      name: "รุ่งเรือง รุ่งโรจน์",
+      tel: "083-0011231",
+      hour: "2000",
+      store: "คูโบต้าชัยศิริขอนแก่น",
       broken: "",
+      type: "",
+      Date: "",
+      Time: "",
+      NameTech: "",
       salary: null,
       supplies: null,
       car: null,
       IDSupplies: "",
-      Cost: null,
+      Cost: "270",
       Promotion: "",
     })
   }

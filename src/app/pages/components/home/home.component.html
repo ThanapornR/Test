@@ -1,20 +1,6 @@
-<!-- <p>home works!</p>
-<div class="container">
-  <form [formGroup]="form">
-    <label> username </label>
-    <input formControlName="username" type="text" class="form-control" /><br />
-    <label> password </label>
-    <input
-      formControlName="password"
-      type="password"
-      class="form-control"
-    /><br />
-  </form>
-  <button (click)="submit()" type="submit" class="btn btn-success">
-    submit
-  </button>
-</div> -->
-
+<!-- <button (click)="submit()" type="submit" class="btn btn-success">
+  submit
+</button> -->
 <!-- head -->
 <div class="card card-primary shadow">
   <div class="card-body text-primary1">
@@ -27,10 +13,7 @@
   <div class="card-body">
     <!-- ส่วนที่1 -->
     <div class="card-body">
-      <div
-        class="card border-gray mb-1 text-shadow shadow"
-        style="max-width: 100%"
-      >
+      <div class="card border-gray mb-1 text-shadow shadow" style="max-width: 100%">
         <div class="card-body text-primary1">
           <label for="inputCustomer" class="col-form-label">ข้อมูลลูกค้า</label>
           <div class="form-group row">
@@ -41,12 +24,8 @@
                   <label for="inputID" class="col-form-label">KUBOTA ID</label>
                 </div>
                 <div class="col-lg">
-                  <input
-                    formControlName="KUBOTAID"
-                    type="text"
-                    class="form-control text-shadow"
-                    id="inputID"
-                  />
+                  <!-- <output formControlName="KUBOTAID" type="text" class="input-group-text" id="inputID">KU2020001</output> -->
+                  <input formControlName="KUBOTAID" type="text" class="input-group-text form-control" id="inputID" />
                 </div>
               </div>
             </div>
@@ -54,17 +33,11 @@
             <div class="col-lg-6">
               <div class="form-group row">
                 <div class="col-auto">
-                  <label for="inputName" class="col-form-label"
-                    >ชื่อลูกค้า</label
-                  >
+                  <label for="inputName" class="col-form-label">ชื่อลูกค้า</label>
                 </div>
                 <div class="col-lg">
-                  <input
-                    formControlName="name"
-                    type="text"
-                    class="form-control text-shadow"
-                    id="inputName"
-                  />
+                  <!-- <output formControlName="name" type="text" class="input-group-text" id="inputName">รุ่งเรือง รุ่งโรจน์</output> -->
+                  <input formControlName="name" type="text" class="input-group-text form-control" id="inputName" />
                 </div>
               </div>
             </div>
@@ -77,37 +50,22 @@
                   <label for="inputTel" class="col-form-label">เบอร์โทร</label>
                 </div>
                 <div class="col-lg">
-                  <input
-                    formControlName="tel"
-                    type="text"
-                    class="form-control text-shadow"
-                    id="inputTel"
-                  />
+                  <!-- <output formControlName="tel" type="text" class="input-group-text" id="inputTel">083-0011231</output> -->
+                  <input formControlName="tel" type="text" class="input-group-text form-control" id="inputTel" />
                 </div>
               </div>
             </div>
             <div class="col-lg-6">
               <div class="form-group row">
                 <div class="col-auto">
-                  <label for="inputHour" class="col-form-label"
-                    >ชั่วโมงการใช้งาน</label
-                  >
+                  <label for="inputHour" class="col-form-label">ชั่วโมงการใช้งาน</label>
                 </div>
                 <div class="col-lg">
-                  <input
-                    formControlName="hour"
-                    type="text"
-                    class="form-control text-shadow"
-                    id="inputHour"
-                  />
+                  <!-- <output formControlName="hour" type="text" class="input-group-text" id="inputHour">2,000</output> -->
+                  <input formControlName="hour" type="number" class="input-group-text form-control" id="inputHour" />
                 </div>
                 <div class="col-lg-1">
-                  <label
-                    for="inputSupplies"
-                    class="col-form-label"
-                    style="margin-left: -12px"
-                    >ชั่วโมง</label
-                  >
+                  <label for="inputSupplies" class="col-form-label" style="margin-left: -12px">ชั่วโมง</label>
                 </div>
               </div>
             </div>
@@ -116,27 +74,18 @@
       </div>
     </div>
     <div class="card-body">
-      <div
-        class="card border-gray mb-1 text-shadow shadow"
-        style="max-width: 100%"
-      >
+      <div class="card border-gray mb-1 text-shadow shadow" style="max-width: 100%">
         <div class="card-body col-lg">
           <!-- ร้านค้าบริการ -->
           <div class="form-group row">
             <div class="col-lg-6">
               <div class="form-group row">
                 <div class="col-lg-2">
-                  <label for="inputStore" class="col-form-label"
-                    >ร้านค้าบริการ</label
-                  >
+                  <label for="inputStore" class="col-form-label">ร้านค้าบริการ</label>
                 </div>
                 <div class="col-lg">
-                  <input
-                    formControlName="store"
-                    type="text"
-                    class="form-control text-shadow"
-                    id="inputStore"
-                  />
+                  <!-- <output formControlName="store" type="text" class="input-group-text" id="inputStore">คูโบต้าชัยศิริขอนแก่น</output> -->
+                  <input formControlName="store" type="text" class="input-group-text form-control" id="inputStore" />
                 </div>
               </div>
             </div>
@@ -173,17 +122,10 @@
             <div class="col-lg-6">
               <div class="form-group row">
                 <div class="col-lg-2">
-                  <label for="inputBroken" class="col-form-label"
-                    >อาการเสีย</label
-                  >
+                  <label for="inputBroken" class="col-form-label">อาการเสีย</label>
                 </div>
                 <div class="col-lg">
-                  <input
-                    formControlName="broken"
-                    type="text"
-                    class="form-control text-shadow"
-                    id="inputBroken"
-                  />
+                  <input formControlName="broken" type="text" class="form-control" id="inputBroken" />
                 </div>
               </div>
             </div>
@@ -193,16 +135,11 @@
             <div class="col-lg-6">
               <div class="form-group row">
                 <div class="col-lg-2">
-                  <label for="inputType" class="col-form-label"
-                    >ประเภทงาน</label
-                  >
+                  <label for="inputType" class="col-form-label">ประเภทงาน</label>
                 </div>
                 <div class="col-lg">
-                  <select
-                    class="form-control dropdown-toggle text-shadow"
-                    aria-label=".form-select-sm example"
-                  >
-                    <option selected>งานซ่อมทั่วไป</option>
+                  <select formControlName="type" class="form-control dropdown-toggle" aria-label=".form-select-sm example">
+                    <option selected>ประเภทงานซ่อมทั่วไป...</option>
                     <option value="1">งานซ่อมทั่วไป1</option>
                     <option value="2">งานซ่อมทั่วไป2</option>
                     <option value="3">งานซ่อมทั่วไป3</option>
@@ -217,17 +154,10 @@
             <div class="col-lg-6">
               <div class="form-group row">
                 <div class="col-auto">
-                  <label for="inputDate" class="col-form-label"
-                    >วันที่จองบริการ</label
-                  >
+                  <label for="inputDate" class="col-form-label">วันที่จองบริการ</label>
                 </div>
                 <div class="col-lg">
-                  <input
-                    type="date"
-                    class="form-control text-shadow"
-                    id="inputDate"
-                    style="margin-left: 0px"
-                  />
+                  <input formControlName="Date" type="date" class="form-control" id="inputDate" style="margin-left: 0px" />
                 </div>
               </div>
             </div>
@@ -235,16 +165,10 @@
             <div class="col-lg-6">
               <div class="form-group row">
                 <div class="col-auto">
-                  <label for="inputTime" class="col-form-label"
-                    >เวลาจองบริการ</label
-                  >
+                  <label for="inputTime" class="col-form-label">เวลาจองบริการ</label>
                 </div>
                 <div class="col-lg">
-                  <input
-                    type="time"
-                    class="form-control text-shadow"
-                    id="inputTime"
-                  />
+                  <input formControlName="Time" type="time" class="form-control" id="inputTime" />
                 </div>
               </div>
             </div>
@@ -254,16 +178,11 @@
             <div class="col-lg-6">
               <div class="form-group row">
                 <div class="col-auto">
-                  <label for="inputNameTech" class="col-form-label"
-                    >ID / ชื่อช่างบริการ</label
-                  >
+                  <label for="inputNameTech" class="col-form-label">ID / ชื่อช่างบริการ</label>
                 </div>
                 <div class="col-lg">
-                  <select
-                    class="form-control dropdown-toggle text-shadow"
-                    aria-label=".form-select-sm example"
-                    style="margin-left: -12px"
-                  >
+                  <select formControlName="NameTech" class="form-control dropdown-toggle" aria-label=".form-select-sm example"
+                    style="margin-left: -12px">
                     <option selected>สมชัย</option>
                     <option value="1">สมชาย</option>
                     <option value="2">สมศรี</option>
@@ -280,25 +199,16 @@
     <div class="card-body">
       <div class="card border-gray mb-1 shadow" style="max-width: 100%">
         <div class="card-body text-primary1">
-          <label for="inputPropCost" class="col-form-label"
-            >ประเมินค่าใช้จ่าย</label
-          >
+          <label for="inputPropCost" class="col-form-label">ประเมินค่าใช้จ่าย</label>
           <div class="form-group row">
             <!-- ค่าแรงพนักงาน -->
             <div class="col-lg-6">
               <div class="form-group row">
                 <div class="col-auto">
-                  <label for="inputSalary" class="col-form-label"
-                    >ค่าแรงพนักงาน</label
-                  >
+                  <label for="inputSalary" class="col-form-label">ค่าแรงพนักงาน</label>
                 </div>
                 <div class="col-lg">
-                  <input
-                    formControlName="salary"
-                    type="text"
-                    class="form-control text-shadow"
-                    id="inputSalary"
-                  />
+                  <input formControlName="salary" type="text" class="form-control" id="inputSalary" />
                 </div>
                 <div class="col-lg-1">
                   <label for="inputSupplies" class="col-form-label">บาท</label>
@@ -309,18 +219,11 @@
             <div class="col-lg-6">
               <div class="form-group row">
                 <div class="col-auto">
-                  <label for="inputSupplies" class="col-form-label"
-                    >ค่าอะไหล่สิ้นเปลือง</label
-                  >
+                  <label for="inputSupplies" class="col-form-label">ค่าอะไหล่สิ้นเปลือง</label>
                 </div>
                 <div class="col-lg">
-                  <input
-                    formControlName="supplies"
-                    type="text"
-                    type="text"
-                    class="form-control text-shadow"
-                    id="inputSupplies"
-                  />
+                  <input formControlName="supplies" type="text" type="text" class="form-control"
+                    id="inputSupplies" />
                 </div>
                 <div class="col-lg-1">
                   <label for="inputSupplies" class="col-form-label">บาท</label>
@@ -336,12 +239,7 @@
                   <label for="inputCar" class="col-form-label">ค่ารถ</label>
                 </div>
                 <div class="col-lg">
-                  <input
-                    formControlName="car"
-                    type="text"
-                    class="form-control text-shadow"
-                    id="inputCar"
-                  />
+                  <input formControlName="car" type="text" class="form-control" id="inputCar" />
                 </div>
                 <div class="col-lg-1">
                   <label for="inputSupplies" class="col-form-label">บาท</label>
@@ -361,17 +259,11 @@
             <div class="col-lg-6">
               <div class="form-group row">
                 <div class="col-auto">
-                  <label for="inputIDSupplies" class="col-form-label"
-                    >รหัสอะไหล่</label
-                  >
+                  <label for="inputIDSupplies" class="col-form-label">รหัสอะไหล่</label>
                 </div>
                 <div class="col-lg">
-                  <input
-                    formControlName="IDSupplies"
-                    type="text"
-                    class="form-control text-shadow"
-                    id="inputIDSupplies"
-                  />
+                  <input formControlName="IDSupplies" type="text" class="form-control"
+                    id="inputIDSupplies" />
                 </div>
               </div>
             </div>
@@ -382,12 +274,7 @@
                   <label for="inputCost" class="col-form-label">ราคา</label>
                 </div>
                 <div class="col-lg">
-                  <input
-                    formControlName="Cost"
-                    type="text"
-                    class="form-control text-shadow"
-                    id="inputCost"
-                  />
+                  <input formControlName="Cost" type="text" class="input-group-text form-control" id="inputCost" />
                 </div>
                 <div class="col-lg-1">
                   <label for="inputSupplies" class="col-form-label">บาท</label>
@@ -399,18 +286,11 @@
             <div class="col-lg-6">
               <div class="form-group row">
                 <div class="col-auto">
-                  <label for="inputPromotion" class="col-form-label"
-                    >โปรโมชั่นส่วนลด</label
-                  >
+                  <label for="inputPromotion" class="col-form-label">โปรโมชั่นส่วนลด</label>
                 </div>
                 <div class="input-group col-lg">
-                  <input
-                    formControlName="Promotion"
-                    type="text"
-                    class="col-auto form-control"
-                    aria-label=""
-                    aria-describedby="button-addon2"
-                  />
+                  <input formControlName="Promotion" type="text" class="col-auto form-control" aria-label=""
+                    aria-describedby="button-addon2" />
                   <button class="btn btn-dark" type="button" id="button-addon2">
                     ใช้โค้ด
                   </button>
@@ -431,16 +311,18 @@
       <div class="card border-gray mb-1 shadow" style="max-width: 100%">
         <div class="card-body text-primary1">
           <!-- <div class="form-group row"> -->
-          <label for="inputCostProp" class="col-form-label"
-            >ประเมินค่าใช้จ่าย</label
-          ><br />
+          <label for="inputCostProp" class="col-form-label">ประเมินค่าใช้จ่าย</label><br />
           <!-- </div> -->
           <div class="card-body">
             <table class="table" border="0" cellpadding="4" cellspacing="0">
               <thead>
                 <tr>
-                  <th scope="col"><p>รายละเอียด</p></th>
-                  <th scope="col"><p>ราคา</p></th>
+                  <th scope="col">
+                    <p>รายละเอียด</p>
+                  </th>
+                  <th scope="col">
+                    <p>ราคา</p>
+                  </th>
                 </tr>
               </thead>
               <tbody>
@@ -463,8 +345,12 @@
               </tbody>
               <tfoot>
                 <tr colspan="5">
-                  <th scope="col"><p>รวม</p></th>
-                  <th scope="col"><p>฿ 1,893</p></th>
+                  <th scope="col">
+                    <p>รวม</p>
+                  </th>
+                  <th scope="col">
+                    <p>฿ 1,893</p>
+                  </th>
                 </tr>
               </tfoot>
             </table>
@@ -473,12 +359,11 @@
       </div>
     </div>
     <div class="col-sm-12" style="text-align: right">
-      <button
-        (click)="submit()"
-        type="submit"
-        class="btn btn-success1 col-xl-2 mb-3"
-      >
+      <!-- <button (click)="submit()" type="submit" class="btn btn-success1 col-xl-2 mb-3">
         ยืนยัน
+      </button> -->
+      <button (click)="submit()" type="submit" class="btn btn-success1 col-xl-2 mb-3">
+        submit
       </button>
     </div>
   </div>
