@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+p {
+  margin-left: 1cm;
+}
+.card {
+  border-color: hsla(183, 70%, 81%, 0.938);
+  box-shadow: 0 2px 2px 0 hsla(181, 59%, 82%, 0.938);
+}
+input {
+  border-color: hsla(183, 70%, 81%, 0.938);
+  box-shadow: 0 2px 2px 0 hsla(181, 59%, 82%, 0.938);
+}
+label {
+  color: #00a9ae;
+  text-shadow: 0 3px 5px 0 #00a9ae;
+}
+.button {
+  background-color: #00a9ae;
+  color: white;
+}
+.form-control.ng-invalid.ng-dirty,
+.form-control.ng-invalid.ng-touched {
+  border-color: red !important;
+}
+.form-control.ng-invalid.ng-dirty:focus,
+.form-control.ng-invalid.ng-touched:focus {
+  border-color: red;
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
